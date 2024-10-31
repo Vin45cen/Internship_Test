@@ -1,26 +1,23 @@
+Great! Here’s the updated README with your GitHub repository link included:
+
+---
+
 # Flask API for LLM Inference using Ollama
 
-this project use a simple FLASK API that use ollama library such as llama3.2 to perform language model inference.
-Here’s the README with a table of contents and refined sections:
+This project uses a simple Flask API that employs the Ollama library, specifically the LLaMA 3.2 model, to perform language model inference. 
 
 ## Table of Contents
 - [Requirements](#requirements)
 - [Project Structure](#project-structure)
+- [Installation](#installation)
 - [Usage](#usage)
 - [Example Request and Response](#example-request-and-response)
 - [Error Handling](#error-handling)
 
+
 ## Requirements
 
 - **Python 3.10+**
-
-- Download and setup [Ollama installer](https://github.com/ollama/ollama)
-   
-- Pull the llama3.2 model from Ollama:
-   ```bash
-   ollama pull llama3.2
-   ```
-   
 - **Flask** - To install Flask, run:
   ```bash
   pip install Flask
@@ -30,12 +27,32 @@ Here’s the README with a table of contents and refined sections:
   pip install ollama
   ```
 
-
-
 ## Project Structure
 
 - **main.py** - Contains the code to create the Flask API and handle requests.
-  
+
+## Installation
+
+1. Clone the repository or download the code files.
+   ```bash
+   git clone https://github.com/Vin45cen/Internship_Test.git
+   ```
+2. Navigate into the project directory:
+   ```bash
+   cd Internship_Test
+   ```
+
+3. Set up a virtual environment (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # For Windows, use `venv\Scripts\activate`
+   ```
+
+4. Install the required libraries:
+   ```bash
+   pip install Flask ollama
+   ```
+
 ## Usage
 
 1. **Run the API**:
@@ -77,3 +94,4 @@ curl -X POST -H "Content-Type: application/json" -d "{\"prompt\": \"Explain GPT 
 ## Error Handling
 
 If the `prompt` key is missing from the request JSON, or an error occurs during response generation, an error message is returned.
+
