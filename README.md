@@ -13,6 +13,14 @@ Here’s the README with a table of contents and refined sections:
 ## Requirements
 
 - **Python 3.10+**
+
+- Download and setup [Ollama installer](https://github.com/ollama/ollama)
+   
+- Pull the llama3.2 model from Ollama:
+   ```bash
+   ollama pull llama3.2
+   ```
+   
 - **Flask** - To install Flask, run:
   ```bash
   pip install Flask
@@ -22,12 +30,7 @@ Here’s the README with a table of contents and refined sections:
   pip install ollama
   ```
 
-- Download and setup [Ollama installer](https://github.com/ollama/ollama)
-   
-- Pull the llama3.2 model from Ollama:
-   ```bash
-   ollama pull llama3.2
-   ```
+
 
 ## Project Structure
 
