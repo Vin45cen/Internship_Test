@@ -18,6 +18,12 @@ This project uses a simple Flask API that employs the Ollama library, specifical
 ## Requirements
 
 - **Python 3.10+**
+- Download and setup [Ollama installer](https://github.com/ollama/ollama)
+   
+- Pull the llamma3.2 model from Ollama:
+   ```bash
+   ollama pull llamma3.2
+   ```
 - **Flask** - To install Flask, run:
   ```bash
   pip install Flask
