@@ -3,9 +3,9 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-def generate(prompt):
-    response = ollama.generate(model='llama3.2', prompt=prompt)
-    return response
+def model(prompt):
+    model_ollama = ollama.generate(model='llama3.2', prompt=prompt)
+    return model_ollama
 
 @app.route('/inference', methods=['POST'])
 
@@ -18,7 +18,7 @@ def inference():
         prompt = data['prompt']
 
     try:
-        response = generate(prompt)
+        response = model(prompt)
         return jsonify({'Response': response['response']}), 200
     except Exception as e:
         return jsonify({'Error': str(e)}), 500
